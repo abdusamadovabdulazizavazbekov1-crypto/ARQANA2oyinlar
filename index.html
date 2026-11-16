@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ARQANA 2</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Unbounded:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Tepa qism -->
+  <header>
+    <div class="wrap bar">
+      <a class="logo" href="#top">ARQANA<b>2</b></a>
+      <span class="tag">O‘yinlar platformasi</span>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- Bosh qism: yosh rejimini tanlash -->
+    <section class="hero">
+      <div class="wrap">
+        <h1>ARQANA<b>2</b></h1>
+        <p class="lead">Yoshingizga mos o‘yinlar: tezkorlik, xotira, mantiq, viktorina va klassik o‘yinlar.</p>
+
+        <div class="ages" role="group" aria-label="Yosh rejimi">
+          <button class="age" data-age="6-12" aria-pressed="false">6–12</button>
+          <button class="age" data-age="13-17" aria-pressed="true">13–17</button>
+          <button class="age" data-age="18+" aria-pressed="false">18+</button>
+        </div>
+        <p class="age-hint" id="age-hint"></p>
+      </div>
+    </section>
+
+    <!-- O'yinlar ro'yxati -->
+    <section class="catalog">
+      <div class="wrap">
+        <div class="filters" id="filters" role="group" aria-label="Turkum"></div>
+        <div class="games" id="games"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>Reklamasiz. Shaxsiy ma’lumot yig‘ilmaydi. Natijalar faqat sizning brauzeringizda saqlanadi.</p>
+    </div>
+  </footer>
+
+  <!-- O'yin oynasi -->
+  <div class="stage" id="stage" hidden>
+    <div class="panel" role="dialog" aria-modal="true" aria-labelledby="stage-title">
+      <div class="panel-head">
+        <div>
+          <h2 id="stage-title"></h2>
+          <p id="stage-sub"></p>
+        </div>
+        <button class="close" id="stage-close">Yopish</button>
+      </div>
+      <div id="stage-body"></div>
+    </div>
+  </div>
+
+  <script src="games.js"></script>
+</body>
+</html>
